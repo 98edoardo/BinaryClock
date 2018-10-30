@@ -1,5 +1,12 @@
-#include <Arduino.h>
-#include <Adafruit_NeoPixel.h>
+#ifndef _LIB_ARDUINO
+  #define _LIB_ARDUINO
+  #include <Arduino.h>
+#endif
+
+#ifndef _LIB_NEOPIXEL
+  #define _LIB_NEOPIXEL
+  #include <Adafruit_NeoPixel.h>
+#endif
 
 class StrisciaLed {
   

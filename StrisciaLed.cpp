@@ -8,13 +8,13 @@ const bool StrisciaLed::READ_MAP[] = { false, true, false };
 StrisciaLed::StrisciaLed(Adafruit_NeoPixel *pixels) {
   _pixels = pixels;
   
-  _coloreOreOn = _pixels -> Color(0, 0, 255, 50);
-  _coloreMinutiOn = _pixels -> Color(123, 255, 0, 255);
+  _coloreOreOn = _pixels -> Color(0, 0, 255, 255);
+  _coloreMinutiOn = _pixels -> Color(0, 255, 0, 255);
   _coloreSecondiOn = _pixels -> Color(255, 0, 0, 255);
   
-  _coloreOreOff = _pixels -> Color(255, 255, 255, 255);
-  _coloreMinutiOff = _pixels -> Color(255, 255, 255, 255);
-  _coloreSecondiOff = _pixels -> Color(255, 255, 255, 255);
+  _coloreOreOff = _pixels -> Color(10, 10, 10, 255);
+  _coloreMinutiOff = _pixels -> Color(10, 10, 10, 255);
+  _coloreSecondiOff = _pixels -> Color(10, 10, 10, 255);
 }
 
 void StrisciaLed::SetHours(uint8_t ore) {
